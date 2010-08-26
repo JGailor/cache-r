@@ -7,6 +7,6 @@ telnet = Net::Telnet::new("Host" => "127.0.0.1", "Port" => 10101, "Prompt" => /a
     telnet.cmd("put::key#{actor}#{t}::Message #{actor}-#{t}") {|r| puts "#{t} #{r}"}
   rescue
   end
-  sleep 1
+  sleep 0.25
 end
   
