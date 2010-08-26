@@ -19,7 +19,7 @@ module CacheR
     else
       send_data "ERR::Unrecognized Command"
     end
-    send_data "aaaa"
+    send_data "\r\n"
     total = Time.now - t
     puts "request took #{total} to process"
   end
